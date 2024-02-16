@@ -1,12 +1,33 @@
 <?php
-include 'connect.php';
-if (isset($_GET['id']) && is_numeric ($_GET['id']))
-    $id= $_GET['id'];
-    $query = $db ->prepare("DELETE FROM cijfer where id =id");
-    $query ->bindParam(':id', $id, PDO::PARAM_INT);
 
-    if ($query->execute())
-    header("location: index.php");
-    exit;
+        if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
+            echo "<script>alert('Leerling is Verwijderd')</script>";
+            echo "<script> location.replace('Opdracht9.3.php');</script>";
+
+        
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "cijfers";
+        
+            try {
+                $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            } catch(PDOException $e) {
+                echo "Connection failed: " . $e->getMessage();
+            }
+        
+            $sql = "
+                DELETE FROM cijfers
+                WHERE id = :id";
+            
+            $stmt = $conn->prepare($sql);
+            
+            $stmt->execute(
+                [
+                    ':id'=>$_GET['id']
+                ]);
+            
+        }
 
 ?>

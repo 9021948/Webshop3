@@ -1,0 +1,48 @@
+body{
+    background-color: goldenrod;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+    background-color: gold;
+}
+
+td{
+    border: 1px solid black;
+    width: 150px;
+    text-align: center;
+}
+
+th{
+    border: 1px solid black;
+}
+
+.Search{
+    height: 3vh;
+}
+
+.Search-button{
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    border: 0;
+}
+
+.Zoeken{
+    height: 33px;
+    border: 0;
+}
+
+.search-div{
+    display: flex;
+}
+
+.sort{
+    text-decoration: none;
+}
+
+.sort:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
