@@ -2,6 +2,9 @@
 //auteur : junior
 //functie: voegen van 1 fiets 
 
+
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
     echo "Er is gepost<br>";
@@ -29,11 +32,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($status) {
         echo 'toegevoegd';
-    } else {
+    } 
+    
+    else {
         echo 'fail: ' . implode(" ", $query->errorInfo());
     }
+    
+    
+    // haalt alle data's op
 }
-
 ?>
 
 
@@ -47,7 +54,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 
 <h2>Voeg een nieuwe fiets toe</h2>
-<form action="insert_db.php" method="post" enctype="multipart/form-data">
+<form action="insert_db.php" methode="post"
+
+<form action="" method="post" enctype="multipart/form-data">
     
   <label for="merk">Merk:</label>
   <input type="text" id="merk" name="Merk" required><br>
@@ -62,6 +71,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <input type="text" id="foto" name="Foto" required><br>
 
   <input type="submit" value="Voeg toe">
-</form>
+ </form>
 </body>
 </html>

@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Fietsenmaker</h1>
-    <img src="./img/Groene fiets.png">
+    <img src="./Images/fiets.pg">
     <a href="insert.php">Fiets toev</a><br>
     <?php
 
@@ -17,3 +17,4 @@
     ?>
 </body>
 </html>
+

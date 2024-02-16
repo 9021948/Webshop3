@@ -34,11 +34,11 @@ echo "<tr>
         echo "<td>" . $row['Merk'] . "</td>";
         echo "<td>" . $row['Type'] . "</td>";
         echo "<td>" . $row['Prijs'] . "</td>";
-        echo '<td>' . '<img src="img/' . $row['Foto'] . '">' . ' </td>'; // juiste pad naar afbeeldingen
-        
+        echo '<td>' . '<img src="img/' . $row['foto'] . '">' . ' </td>';
+            
         echo "</tr>";
     }
-echo "</table>"; // juiste afsluitende tag
+echo "</tabel>";
 
 ?>
 

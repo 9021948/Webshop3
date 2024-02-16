@@ -1,34 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
 <?php
- include("connect.php");
+    //auteur: junior
+    //functie : connectie maken met de database 
 
- $sql = "SELECT * FROM fietsen";
+    //conect database
+    include "connect.php";
 
- $stmt = $conn->prepare($sql);
- 
- $stmt->execute();
- $result = $stmt->fetchAll(PDO::FETCH_ASSOC); 
+    //maak een query
+    $sql = "SELECT * FROM fietsen";
+    //prepare
+    $stmt = $conn->prepare($sql);
+    //uitvoeren
+    $stmt->execute();
+    // ophalen alle data
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-echo "<br>";
-echo "<table border=1px>";
-
-echo "<tr>
-<th>Merk</th>
-<th>Type</th>
-<th>Prijs</th>
-<th>Foto</th>
-</tr>
-";
-
-foreach($result as $row) {
-    echo 
-    echo "<td>". $row['Merk'] . '</td>';
-    echo "<td>". $row['Merk'] . '</td>';
-    echo "<td>". $row['Merk'] . '</td>';
-    echo "<td>". $row['Merk'] . '</td>';
-}
-$sql = "SELECT * FROM fietsen";
-$stmt = $conn->prepare($sql);
-$stmt->execute();
-$result = $stmt ->fetchAll(PDO::FETCH_ASSOC);
-
-?>
+    //print de data rij
