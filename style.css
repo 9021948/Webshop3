@@ -1,0 +1,159 @@
+/*aangepast lettertype*/
+@font-face {
+    font-family: Toys;
+    src: url(./fonts/K26ToyBlocks123.ttf);
+}
+
+/*aangepast lettertype*/
+@font-face {
+    font-family: Toysall;
+    src: url(./fonts/Lemon\ Milk.otf);
+}
+
+
+/*html met paddin margin width en height op 0*/
+html{
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*hpb is de home body met background-color black*/
+.hpb{
+    background-color: rgb(255, 255, 255);
+}
+
+/*de ster staat voor alles met een margin 0*/
+*{
+    margin: 0;
+}
+
+/*dit is de nav logo*/
+.logo{
+    font-family: Toysall;
+    letter-spacing: .5rem;
+    font-size: 7rem;
+    color: #ffffff;
+    margin: 0;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+/* dit is de nav */
+nav{
+    font-family: Toysall;
+    width: 98.9vw;
+    height: 7vh;
+    background-color: #6A706E;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1vh solid #6A706E;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.port{
+    width: 100vw;
+    height: 7vh;
+    background-color: #4f5d2f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1vh solid #5c6644;
+    z-index: 2;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+li{
+    padding: .9vw 3.3vh .9vw 3.3vh;
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+li:hover{
+    background-color: #82968C;
+}
+
+/* Algemene achtergrondstijlen voor de hele pagina */
+.bg{
+    margin: 0;
+    width: 98.9vw;
+    height: 100vh;
+    filter: blur(10px);
+    z-index: 1;
+}
+
+/* Stijlen voor de contentsectie */
+.content{
+    position: absolute;
+    left: 6vw;
+    top: 19vh;
+    width: 85vw;
+    height: 75vh;
+    background-image: url(./assets/image1.png);
+    background-size: 100%;
+    transition: all 3s ease;
+}
+
+/* Stijlen voor verschillende tekstsecties */
+.h1t{
+    font-family: Toys;
+    color: #ffffff;
+    font-size: 10rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    margin-top: 7%;
+    
+    
+}
+
+.h3c{
+    font-family: Toysall;
+    text-align: center;
+    color: #82968C;
+    margin-top: 10vh;
+    padding: 0 2vw 0 2vw;
+    font-size: 7rem;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.h3t{
+    margin-top: 100vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    color: #ffffff;
+    font-size: 3rem;
+    text-align: center;
+    width: 98.9vw;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.footer{
+    background-color: #82968C;
+    width: 98.8vw;
+    height: 16vh;
+}
+
+.winkelmandje{
+    height: 7.5vh;
+    margin-left: 67vw;
+}
