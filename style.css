@@ -184,3 +184,32 @@ li:hover{
     }
 
 }
+
+@media only screen and (max-width: 1600px) {
+    nav{
+        background-color: #6A706E;
+        width: 100vw;
+        height: 7.4vh;
+    }
+
+    .logo{
+        font-family: Toysall;
+        letter-spacing: .5rem;
+        font-size: 4.5rem;
+        color: #ffffff;
+        margin: 0;
+        margin-left: 1vw;
+        margin-right: 2vw;
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    }
+
+    li{
+        padding: .7vh 3.3vw .9vh 3.3vw;
+    }
+
+    .winkelmandje{
+        height: 7.5vh;
+        margin-left: 57vw;
+    }
+
+}
