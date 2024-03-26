@@ -157,11 +157,3 @@ li:hover{
     height: 7.5vh;
     margin-left: 67vw;
 }
-
-@media screen and (max-width: 600px) {
-    
-    nav{
-        background-color: #00f9a6;
-    }
-
-}
