@@ -157,3 +157,9 @@ li:hover{
     height: 7.5vh;
     margin-left: 67vw;
 }
+
+@media only screen and (width: 2560px) {
+    nav{
+        background-color: aqua;
+    }
+}
