@@ -122,8 +122,6 @@ li:hover{
     text-align: center;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
     margin-top: 7%;
-    
-    
 }
 
 .h3c{
@@ -158,7 +156,7 @@ li:hover{
     margin-left: 67vw;
 }
 
-@media only screen and (width: 2560px) {
+@media only screen and (max-width: 2560px) {
     nav{
         background-color: aqua;
     }
