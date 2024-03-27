@@ -16,9 +16,12 @@
         <ul>
             <li><a href="home.php">Home</a></li>
             <li><a href="speelgoed.php">Speelgoed</a></li>
+
         </ul>
 
-        <img src="./assets/shopping-cart.gif" class="winkelmandje">
+        <a href="winkelmand.php"> <img src="./assets/shopping-cart.gif" class="winkelmandje"> </a>
+
+
     </nav>
 
     <!--Dit is de div waar alles gaat die wilt in de voor pagina wilt zijn-->
@@ -34,4 +37,3 @@
 
     <script src="Javascript.js"></script>
 </body>
-</html>
