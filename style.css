@@ -156,7 +156,7 @@ li:hover{
     margin-left: 67vw;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (min-width: 1500px) {
     nav{
         background-color: #6A706E;
         width: 100vw;
@@ -185,9 +185,9 @@ li:hover{
 
 }
 
-@media only screen and (min-width: 1700px) {
+@media only screen and (max-width: 1700px) {
     nav{
-        background-color: #009a67;
+        background-color: #6A706E;
         width: 100vw;
         height: 7.4vh;
     }
@@ -209,7 +209,7 @@ li:hover{
 
     .winkelmandje{
         height: 7.5vh;
-        margin-left: 57vw;
+        margin-left: 58.1vw;
     }
 
 }
