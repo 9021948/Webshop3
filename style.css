@@ -244,5 +244,7 @@ li:hover{
 }
 
 .product-div{
+    background-color: #4f5d2f;
+    height: 20vh;
     width: 20vw;
 }
