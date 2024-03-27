@@ -14,8 +14,8 @@
     <nav>
         <h1 class="logo">SJ</h1>
         <ul>
-            <li><a href="Index.html">Home</a></li>
-            <li><a href="Portofolio.html">Speelgoed</a></li>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="speelgoed.php">Speelgoed</a></li>
         </ul>
 
         <img src="./assets/shopping-cart.gif" class="winkelmandje">
