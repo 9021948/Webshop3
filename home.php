@@ -18,7 +18,7 @@
             <li><a href="Portofolio.html">Speelgoed</a></li>
         </ul>
 
-        <img src="./assets/winkelmandje.png" class="winkelmandje">
+        <img src="./assets/shopping-cart.gif" class="winkelmandje">
     </nav>
 
     <!--Dit is de div waar alles gaat die wilt in de voor pagina wilt zijn-->
