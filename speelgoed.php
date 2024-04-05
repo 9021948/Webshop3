@@ -17,6 +17,14 @@
 
         <img src="./assets/shopping-cart.gif" class="winkelmandje">
     </nav>
+
+    <?php
+
+        include 'function.php';
+
+        Producten();
+
+    ?>
     
 </body>
 </html>

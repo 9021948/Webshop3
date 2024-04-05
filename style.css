@@ -135,14 +135,12 @@ li:hover{
 }
 
 .h3t{
-    margin-top: 100vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
     color: #ffffff;
     font-size: 3rem;
     text-align: center;
-    width: 98.9vw;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    padding: 0;
+    margin: 0;
 }
 
 .footer{
@@ -244,5 +242,17 @@ li:hover{
 }
 
 .product-div{
-    width: 20vw;
+    width: 360px;
+    height: 400px;
+    background-color: aqua;
+    margin-top: 15vh;
+    margin-left: 4vw;
+    margin-bottom: 5vh;
+}
+
+.main-div{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% 20%;
+    row-gap: 0em;
+    column-gap: 16em;
 }
