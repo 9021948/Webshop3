@@ -255,4 +255,7 @@ li:hover{
     grid-template-columns: 20% 20% 20% 20% 20% 20%;
     row-gap: 0em;
     column-gap: 16em;
+    background-color: #4f5d2f;
+    height: 20vh;
+    width: 20vw;
 }

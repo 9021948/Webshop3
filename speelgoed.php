@@ -26,5 +26,9 @@
 
     ?>
     
+<?php
+    include 'function.php';
+    Producten();
+?>
 </body>
 </html>
