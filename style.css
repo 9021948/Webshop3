@@ -103,14 +103,15 @@ li:hover{
 }
 
 /* Stijlen voor de contentsectie */
-.content{
+.content {
     position: absolute;
-    left: 6vw;
-    top: 19vh;
-    width: 85vw;
-    height: 75vh;
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100vh; 
     background-image: url(./assets/image1.png);
-    background-size: 100%;
+    background-size: cover; 
+    background-position: center; 
     transition: all 3s ease;
 }
 
@@ -143,10 +144,14 @@ li:hover{
     margin: 0;
 }
 
-.footer{
+/* Stijlen voor de footer die de onderkant van de pagina vult van links naar rechts */
+.footer {
     background-color: #82968C;
-    width: 98.8vw;
+    width: 100vw;
     height: 16vh;
+    position: fixed; 
+    bottom: 0; 
+    z-index: 999; 
 }
 
 .winkelmandje{
