@@ -27,7 +27,7 @@ function Producten(){
             echo '<br>';
             echo $product['beschrijving'];
             echo '<br>';
-            echo "<button>Wijzegen</button>";
+            echo "<button>Weizigen</button>";
             echo "<button>Verwijderen</button>";
         echo '</div>';
         echo '<br>';
