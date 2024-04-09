@@ -1,17 +1,17 @@
-/*aangepast lettertype*/
+/* Definitie van aangepaste lettertypen */
+/* Lettertype voor 'Toys' */
 @font-face {
     font-family: Toys;
     src: url(./fonts/K26ToyBlocks123.ttf);
 }
 
-/*aangepast lettertype*/
+/* Lettertype voor 'Toysall' */
 @font-face {
     font-family: Toysall;
     src: url(./fonts/Lemon\ Milk.otf);
 }
 
-
-/*html met paddin margin width en height op 0*/
+/* Algemene stijlen voor het HTML-element */
 html{
     width: 0;
     height: 0;
@@ -19,17 +19,17 @@ html{
     padding: 0;
 }
 
-/*hpb is de home body met background-color black*/
+/* Stijlen voor de home body met achtergrondkleur zwart */
 .hpb{
     background-color: rgb(255, 255, 255);
 }
 
-/*de ster staat voor alles met een margin 0*/
+/* Stijlen voor alle elementen met het verwijderen van marges */
 *{
     margin: 0;
 }
 
-/*dit is de nav logo*/
+/* Stijlen voor het logo in de navigatiebalk */
 .logo{
     font-family: Toysall;
     letter-spacing: .5rem;
@@ -41,7 +41,7 @@ html{
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
-/* dit is de nav */
+/* Stijlen voor de navigatiebalk */
 nav{
     font-family: Toysall;
     width: 98.9vw;
@@ -57,6 +57,7 @@ nav{
     z-index: 100;
 }
 
+/* Stijlen voor de port (niet gedefinieerd in HTML-code) */
 .port{
     width: 100vw;
     height: 7vh;
@@ -69,6 +70,7 @@ nav{
     z-index: 2;
 }
 
+/* Stijlen voor de lijsten in navigatiebalk */
 ul{
     display: flex;
     flex-direction: row;
@@ -76,12 +78,14 @@ ul{
     padding-inline-start: 0;
 }
 
+/* Stijlen voor de lijstitems in navigatiebalk */
 li{
     padding: .9vw 3.3vh .9vw 3.3vh;
     font-size: 4rem;
     color: #ffffff;
 }
 
+/* Stijlen voor de ankers in navigatiebalk */
 a{
     text-decoration: none;
     color: #ffffff;
@@ -89,6 +93,7 @@ a{
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
+/* Stijlen voor de lijstitems bij hover in navigatiebalk */
 li:hover{
     background-color: #82968C;
 }
@@ -144,7 +149,7 @@ li:hover{
     margin: 0;
 }
 
-/* Stijlen voor de footer die de onderkant van de pagina vult van links naar rechts ;) */
+/* Stijlen voor de footer */
 .footer {
     background-color: #82968C;
     width: 100vw;
@@ -154,12 +159,15 @@ li:hover{
     z-index: 999; 
 }
 
+/* Stijlen voor het winkelmandje */
 .winkelmandje{
     height: 7.5vh;
     margin-left: 67vw;
 }
 
+/* Mediaquery's voor verschillende schermgroottes */
 @media only screen and (min-width: 1500px) {
+    /* Aanpassingen voor schermgroottes van minstens 1500px breed */
     nav{
         background-color: #6A706E;
         width: 100vw;
@@ -189,6 +197,7 @@ li:hover{
 }
 
 @media only screen and (max-width: 1700px) {
+    /* Aanpassingen voor schermgroottes van maximaal 1700px breed */
     nav{
         background-color: #6A706E;
         width: 100vw;
@@ -217,51 +226,5 @@ li:hover{
 
 }
 
-@media only screen and (min-width: 2000px) {
-    nav{
-        background-color: #6A706E;
-        width: 100vw;
-        height: 7.4vh;
-    }
-    
-    .logo{
-        font-family: Toysall;
-        letter-spacing: .5rem;
-        font-size: 4.5rem;
-        color: #ffffff;
-        margin: 0;
-        margin-left: 1vw;
-        margin-right: 2vw;
-        text-shadow: 2px 2px 5px rgb(0, 0, 0);
-    }
-    
-    li{
-        padding: 1.1vh 3.3vw 1.1vh 3.3vw;
-    }
-
-    .winkelmandje{
-        height: 7.5vh;
-        margin-left: 59vw;
-    }
-    
-}
-
-.product-div{
-    width: 360px;
-    height: 400px;
-    background-color: aqua;
-    margin-top: 15vh;
-    margin-left: 4vw;
-    margin-bottom: 5vh;
-}
-
-.main-div{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20% 20%;
-    row-gap: 0em;
-    column-gap: 16em;
-    background-color: #4f5d2f;
-    height: 20vh;
-    width: 20vw;
-}
-
+@media only screen and (min-width: 2000px)
+{}
