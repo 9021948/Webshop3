@@ -134,7 +134,7 @@ li:hover{
     font-family: Toysall;
     text-align: center;
     color: #82968C;
-    margin-top: 10vh;
+    margin-top: 2vh;
     padding: 0 2vw 0 2vw;
     font-size: 7rem;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
@@ -159,14 +159,8 @@ li:hover{
     z-index: 999; 
 }
 
-/* Stijlen voor het winkelmandje */
-.winkelmandje{
-    height: 7.5vh;
-    margin-left: 67vw;
-}
-
 /* Mediaquery's voor verschillende schermgroottes */
-@media only screen and (min-width: 1500px) {
+@media only screen and (max-width: 1200px) {
     /* Aanpassingen voor schermgroottes van minstens 1500px breed */
     nav{
         background-color: #6A706E;
@@ -196,7 +190,7 @@ li:hover{
 
 }
 
-@media only screen and (max-width: 1700px) {
+@media only screen and (max-width: 1600px) {
     /* Aanpassingen voor schermgroottes van maximaal 1700px breed */
     nav{
         background-color: #6A706E;
@@ -221,10 +215,113 @@ li:hover{
 
     .winkelmandje{
         height: 7.5vh;
-        margin-left: 58.1vw;
+        margin-left: 47.1vw;
+        margin-top: 1vh;
     }
 
 }
 
-@media only screen and (min-width: 2000px)
-{}
+@media only screen and (min-width: 2000px) {
+    nav{
+        background-color: #6A706E;
+        width: 100vw;
+        height: 7.4vh;
+    }
+    
+    .logo{
+        font-family: Toysall;
+        letter-spacing: .5rem;
+        font-size: 4.5rem;
+        color: #ffffff;
+        margin: 0;
+        margin-left: 1vw;
+        margin-right: 2vw;
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    }
+    
+    li{
+        padding: 1.1vh 3.3vw 1.1vh 3.3vw;
+    }
+    .winkelmandje{
+        height: 7.5vh;
+        margin-right: 59vw;
+    } 
+    
+}
+.product-div{
+    width: 360px;
+    height: 400px;
+    background-color: aqua;
+    margin-bottom: 4vh;
+}
+.main-div{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% 20%;
+    column-gap: 8.5em;
+    height: 20vh;
+    width: 20vw;
+    margin-left: 12vw;
+    margin-top: 5vh;
+}
+
+.speelgoed-title{
+    margin-top: 10vh;
+    font-family: Toysall;
+    margin-left: 35.5vw;
+    color: #ffffff;
+    font-size: 10rem;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    margin-bottom: 5vh;
+}
+
+.body-speelgoed{
+    background-color: #82968C;
+}
+
+.insert-button{
+    margin-left: 83.8vw;
+}
+
+.body-insert{
+    background-image: url(./assets/fluffy-toy-texture-close-up.jpg);
+    background-size: 100rem;
+    background-repeat: no-repeat;
+    background-position-y: -325px;
+}
+
+.form-insert{
+    width: 25vw;
+    height: 70vh;
+    background-color: #2db5ff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 68vw;
+    margin-top: 20vh;
+    border: 5px dashed #006d8b;
+    border-radius: 5rem;
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.input-settings{
+    width: 17rem;
+    height: 2rem;
+    border: 0;
+}
+
+.textarea-settings{
+    width: 17rem;
+    height: 5rem;
+    border: 0;
+}
+
+.insert-btn{
+    width: 10rem;
+    height: 5vh;
+    border: 0;
+    font-size: 1.1rem;
+}
