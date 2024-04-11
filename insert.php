@@ -43,6 +43,9 @@
         <label>Prijs:</label>
         <input type="number" name="prijs" placeholder="Insert de Prijs" required class="input-settings" min="0" max="9999">
         <br>
+        <label>Foto:</label>
+        <input type="text" name="foto" placeholder="Insert de (Foto_Naam.filetype)" required class="input-settings">
+        <br>
         <label>Beschrijving:</label>
         <textarea name="beschrijving" cols="35" rows="10" class="textarea-settings" placeholder="Beschrijving over de Product"></textarea>
         <br>

@@ -56,13 +56,14 @@
 
         echo "<script>alert('Product is Toegevoegd');</script>";
 
-        $sql = "INSERT INTO product (productcode, naam, prijs, beschrijving) VALUES (NULL, :naam, :prijs, :beschrijving)";
+        $sql = "INSERT INTO product (productcode, naam, prijs, beschrijving, foto) VALUES (NULL, :naam, :prijs, :beschrijving, :foto)";
         $query = $connect->prepare($sql);
         $query->execute(
             [
                 ':naam' => $_POST['naam'],
                 ':prijs' => $_POST['prijs'],
-                ':beschrijving' => $_POST['beschrijving']
+                ':beschrijving' => $_POST['beschrijving'],
+                ':foto' => $_POST['foto']
             ]);
 
     }

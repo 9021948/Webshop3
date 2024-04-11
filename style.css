@@ -314,6 +314,11 @@ li:hover{
     font-size: 1.1rem;
 }
 
+.insert-btn:hover{
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
 .footer-alles{
     width: 98.9vw;
     height: 15vh;
