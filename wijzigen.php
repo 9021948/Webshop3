@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/toy-shop.png" type="image/x-icon">
+    <title>Wijzigen</title>
 </head>
 <body>
 
@@ -16,7 +17,7 @@
         <ul>
             <li><a href="home.php">Home</a></li>
             <li><a href="speelgoed.php">Speelgoed</a></li>
-            <li><a href="overons.php">ONS</a></li>
+            <li><a href="overons.php">Over ons</a></li>
         </ul>
     </nav>
 

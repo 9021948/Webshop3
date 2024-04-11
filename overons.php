@@ -4,12 +4,13 @@
     <!-- Meta-informatie instellen -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/toy-shop.png" type="image/x-icon">
     
     <!-- Verwijzing naar externe CSS-stijlblad -->
     <link rel="stylesheet" href="style.css">
     
     <!-- Titel van de pagina -->
-    <title>ONS</title>
+    <title>Over Ons</title>
 
 </head>
 <body>
@@ -23,7 +24,7 @@
         <ul>
             <li><a href="home.php">Home</a></li>
             <li><a href="speelgoed.php">Speelgoed</a></li>
-            <li><a href="overons.php">ONS</a></li>
+            <li><a href="overons.php">Over ons</a></li>
         </ul>
 
     </nav>

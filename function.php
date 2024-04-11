@@ -36,7 +36,7 @@
                         echo '<input type="image" src="./assets/edit.svg" name="wijzigen" class="wijzigen-icon" title="Product Wijzigen"/>';
                     echo '</form>';
                 
-                    echo '<form method="post" action="verwijderen.php">';
+                    echo '<form method="post" action="home.php">';
                         echo '<input type="image" src="./assets/verwijder.svg" name="verwijderen" class="verwijderen-icon" title="Product Verwijder"/>';
                     echo '</form>';
 

@@ -119,10 +119,11 @@ li:hover{
 /* Stijlen voor verschillende tekstsecties */
 .h1t{
     font-family: Toys;
-    color: #ffffff;
+    background: linear-gradient(90deg, rgba(0, 0, 255, 1), rgba(255, 0, 0, 1), rgba(221, 255, 0, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
     font-size: 10rem;
     text-align: center;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
     padding-top: 22vh;
 }
 
@@ -339,8 +340,7 @@ li:hover{
 }
 
 .insert-icon{
-    width: 2vw;
-    color: #7c7c7c;
+    width: 2.1vw;
     margin-left: 82vw;
 }
 
@@ -363,14 +363,6 @@ li:hover{
     width: 2.1vw;
 }
 
-.add-icon:hover{
-    width: 2vw;
-}
-
-.wijzigen-icon:hover{
-    width: 2vw;
-}
-
-.verwijderen-icon:hover{
+.add-icon:hover, .insert-icon:hover, .wijzigen-icon:hover, .verwijderen-icon:hover{
     width: 2vw;
 }
