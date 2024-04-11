@@ -23,15 +23,12 @@
             <li><a href="speelgoed.php">Speelgoed</a></li>
             <li><a href="overons.php">ONS</a></li>
         </ul>
-
-        <!-- Afbeelding van het winkelmandje -->
-        <img src="./assets/shopping-cart.gif" class="winkelmandje">
     </nav>
 
-    <h1 class="speelgoed-title">speelgoed</h1>
+    <h1 class="speelgoed-title">Speelgoed</h1>
 
-    <form method="post">
-        <input type="submit" value="Insert" name='insert' class='insert-button'>
+    <form method="post" action="insert.php">
+        <input type="image" src="./assets/plus.svg" name="insert" class='insert-icon' title="Product Toevoegen"/>
     </form>
 
     <?php
@@ -40,12 +37,11 @@
 
         // Oproepen van de functie 'Producten'
         Producten();
-        
-        if (isset($_POST['insert'])) {
-            header('Location: insert.php');
-            exit;
-        }
     ?>
+
+        <footer class="footer-alles">
+            <h3 class="h3t">©Copyright 2024 Junior’s Toys. All rights reserved.</h3>
+        </footer>
 
 </body>
 </html>

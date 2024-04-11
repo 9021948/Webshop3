@@ -16,16 +16,32 @@
         // Itereren over elk product en het weergeven
         foreach ($result as $product) {
             echo '<div class="product-div">';
+                echo "<img class='product-foto' src='./assets/" . $product['foto'] . "'>";
                 // Productinformatie weergeven
-                echo $product['naam'];
+                echo "<h1>" . $product['naam'] . "</h1>";
                 echo '<br>';
-                echo $product['prijs'];
+                echo "<h4> &#8364; " . $product['prijs'] . "</h4>";
                 echo '<br>';
-                echo $product['beschrijving'];
+                echo "<h4 class='product-beschrijving'>" . $product['beschrijving'] . "</h4>";
                 echo '<br>';
-                // Knoppen voor het wijzigen en verwijderen van producten
-                echo "<button>Wijzigen</button>";
-                echo "<button>Verwijderen</button>";
+
+                echo '<div class="icon">';
+
+                    echo '<form method="post" action="home.php">';
+                        echo '<input type="image" src="./assets/cart-add.png" name="add" class="add-icon" title="Product Toevoegen"/>';
+                    echo '</form>';
+
+                    // Knoppen voor het wijzigen en verwijderen van producten
+                    echo '<form method="post" action="home.php">';
+                        echo '<input type="image" src="./assets/edit.svg" name="wijzigen" class="wijzigen-icon" title="Product Wijzigen"/>';
+                    echo '</form>';
+                
+                    echo '<form method="post" action="home.php">';
+                        echo '<input type="image" src="./assets/verwijder.svg" name="verwijderen" class="verwijderen-icon" title="Product Verwijder"/>';
+                    echo '</form>';
+
+                echo '</div>';
+
             echo '</div>';
             echo '<br>';
         }

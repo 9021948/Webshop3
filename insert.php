@@ -33,8 +33,6 @@
             <li><a href="overons.php">ONS</a></li>
         </ul>
 
-        <!-- Afbeelding van het winkelmandje -->
-        <img src="./assets/shopping-cart.gif" class="winkelmandje">
     </nav>
 
     <form method="post" class="form-insert">

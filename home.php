@@ -17,13 +17,7 @@
             <li><a href="home.php">Home</a></li>
             <li><a href="speelgoed.php">Speelgoed</a></li>
             <li><a href="overons.php">ONS</a></li>
-            
-
         </ul>
-
-        <a href="winkelmand.php"> <img src="./assets/shopping-cart.gif" class="winkelmandje"> </a>
-
-
     </nav>
 
     <!--Dit is de div waar alles gaat die wilt in de voor pagina wilt zijn-->
@@ -33,9 +27,9 @@
     </div>
 
     <!--Dit is de footer met informatie en een donate knop-->
-    <div class="footer">
+    <footer class="footer">
         <h3 class="h3t">©Copyright 2024 Junior’s Toys. All rights reserved.</h3>
-    </div>
+    </footer>
 
     <script src="Javascript.js"></script>
 </body>

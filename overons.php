@@ -26,8 +26,6 @@
             <li><a href="overons.php">ONS</a></li>
         </ul>
 
-        <!-- Afbeelding van het winkelmandje rechts boven in-->
-        <img src="./assets/shopping-cart.gif" class="winkelmandje">
     </nav>
 
     

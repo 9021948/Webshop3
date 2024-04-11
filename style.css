@@ -154,8 +154,8 @@ li:hover{
     background-color: #82968C;
     width: 100vw;
     height: 16vh;
-    position: fixed; 
-    bottom: 0; 
+    position: absolute; 
+    bottom: 0;
     z-index: 999; 
 }
 
@@ -183,11 +183,6 @@ li:hover{
         padding: .9vh 3.3vw .9vh 3.3vw;
     }
 
-    .winkelmandje{
-        height: 7.5vh;
-        margin-left: 57vw;
-    }
-
 }
 
 @media only screen and (max-width: 1600px) {
@@ -213,12 +208,6 @@ li:hover{
         padding: .7vh 3.3vw .9vh 3.3vw;
     }
 
-    .winkelmandje{
-        height: 7.5vh;
-        margin-left: 47.1vw;
-        margin-top: 1vh;
-    }
-
 }
 
 @media only screen and (min-width: 2000px) {
@@ -242,44 +231,43 @@ li:hover{
     li{
         padding: 1.1vh 3.3vw 1.1vh 3.3vw;
     }
-    .winkelmandje{
-        height: 7.5vh;
-        margin-right: 59vw;
-    } 
     
 }
 .product-div{
-    width: 360px;
-    height: 400px;
-    background-color: aqua;
+    width: 50vh;
+    height: 60vh;
+    background-color: rgb(242, 238, 231);
+    border-radius: .5rem;
     margin-bottom: 4vh;
+    margin-left: 11.7vw;
+    box-shadow: 5px 5px 7px 5px #5e5e5e5e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .main-div{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20% 20%;
     column-gap: 8.5em;
-    height: 20vh;
+    height: fit-content;
     width: 20vw;
-    margin-left: 12vw;
     margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .speelgoed-title{
     margin-top: 10vh;
     font-family: Toysall;
     margin-left: 35.5vw;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     font-size: 10rem;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
     margin-bottom: 5vh;
 }
 
 .body-speelgoed{
-    background-color: #82968C;
-}
-
-.insert-button{
-    margin-left: 83.8vw;
+    background-color: #99e3eb;
 }
 
 .body-insert{
@@ -324,4 +312,65 @@ li:hover{
     height: 5vh;
     border: 0;
     font-size: 1.1rem;
+}
+
+.footer-alles{
+    width: 98.9vw;
+    height: 15vh;
+    background-color: #82968C;
+}
+
+.product-foto{
+    height: 12vw;
+}
+
+.product-beschrijving{
+    text-align: center;
+    width: 20vw;
+}
+
+.product-button{
+    width: 7vw;
+    height: 4vh;
+    border: 0;
+    background-color: rgb(42, 42, 42);
+    margin-bottom: 1vh;
+    color: white;
+}
+
+.insert-icon{
+    width: 2vw;
+    color: #7c7c7c;
+    margin-left: 82vw;
+}
+
+.wijzigen-icon{
+    width: 2.1vw;
+    margin-right: 1vw;
+    margin-left: 7vw;
+}
+
+.verwijderen-icon{
+    width: 2.1vw;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+}
+
+.add-icon{
+    width: 2.1vw;
+}
+
+.add-icon:hover{
+    width: 2vw;
+}
+
+.wijzigen-icon:hover{
+    width: 2vw;
+}
+
+.verwijderen-icon:hover{
+    width: 2vw;
 }
