@@ -21,14 +21,14 @@
     </nav>
 
     <!--Dit is de div waar alles gaat die wilt in de voor pagina wilt zijn-->
-    <div class="content">
+    <header class="content">
             <h1 class="h1t">Junior's Toys</h1>
             <h1 class="h3c">Welkom</h1>
-    </div>
+    </header>
 
     <!--Dit is de footer met informatie en een donate knop-->
     <footer class="footer">
-        <h3 class="h3t">©Copyright 2024 Junior’s Toys. All rights reserved.</h3>
+        <h3 class="h3t">©Copyright 2024 Junior’s Toys. Alle rechten voorbehouden.</h3>
     </footer>
 
     <script src="Javascript.js"></script>

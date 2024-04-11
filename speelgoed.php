@@ -39,9 +39,9 @@
         Producten();
     ?>
 
-        <footer class="footer-alles">
-            <h3 class="h3t">©Copyright 2024 Junior’s Toys. All rights reserved.</h3>
-        </footer>
+    <footer class="footer-alles">
+        <h3 class="h3t">©Copyright 2024 Junior’s Toys. Alle rechten voorbehouden.</h3>
+    </footer>
 
 </body>
 </html>
