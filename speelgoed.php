@@ -38,7 +38,6 @@
 
         // Oproepen van de functie 'Producten'
         Producten();
-        Verwijderen();
 
     ?>
 
