@@ -188,14 +188,21 @@ li:hover{
         height: 7.4vh;
     }
 
+    /* Stijlregel voor elementen met de klasse .logo */
     .logo{
+            /* Gebruik het lettertype Toysall */
         font-family: Toysall;
+            /* Afstand tussen de letters */
         letter-spacing: .5rem;
+        /* Grootte van de tekst */
         font-size: 4.5rem;
+        /* Tekstkleur */
         color: #ffffff;
+        /* Buitenmarges instellen */
         margin: 0;
         margin-left: 1vw;
         margin-right: 2vw;
+        /* Text-shadow voor een schaduweffect */
         text-shadow: 2px 2px 5px rgb(0, 0, 0);
     }
 
@@ -205,6 +212,7 @@ li:hover{
 
 }
 
+/* Media query die wordt toegepast op schermen met een minimale breedte van 2000px */
 @media only screen and (min-width: 2000px) {
     nav{
         background-color: #6A706E;
@@ -212,6 +220,7 @@ li:hover{
         height: 7.4vh;
     }
     
+    /* Stijlen voor het element met de class .logo */
     .logo{
         font-family: Toysall;
         letter-spacing: .5rem;
@@ -223,11 +232,14 @@ li:hover{
         text-shadow: 2px 2px 5px rgb(0, 0, 0);
     }
     
+    /* Stijlen voor alle lijstitems */
     li{
         padding: 1.1vh 3.3vw 1.1vh 3.3vw;
     }
     
 }
+
+/* Stijlen voor het element met de class .product-div */
 .product-div{
     width: 50vh;
     height: 60vh;
@@ -241,6 +253,8 @@ li:hover{
     align-items: center;
     justify-content: center;
 }
+
+/* Stijlen voor het element met de class .main-div */
 .main-div{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20% 20%;
@@ -251,6 +265,7 @@ li:hover{
     margin-bottom: 5vh;
 }
 
+/* Stijlen voor het element met de class .speelgoed-title */
 .speelgoed-title{
     margin-top: 10vh;
     font-family: Toysall;
@@ -261,10 +276,12 @@ li:hover{
     margin-bottom: 5vh;
 }
 
+/* Stijlen voor het element met de class .body-speelgoed */
 .body-speelgoed{
     background-color: #99e3eb;
 }
 
+/* Stijlen voor het element met de class .body-insert */
 .body-insert{
     background-image: url(./assets/fluffy-toy-texture-close-up.jpg);
     background-size: 100rem;
@@ -272,6 +289,7 @@ li:hover{
     background-position-y: -325px;
 }
 
+/* Stijlen voor het element met de class .form-insert */
 .form-insert{
     width: 25vw;
     height: 70vh;
@@ -291,18 +309,21 @@ li:hover{
     font-weight: 900;
 }
 
+/* Stijlen voor het element met de class .input-settings */
 .input-settings{
     width: 17rem;
     height: 2rem;
     border: 0;
 }
 
+/* Stijlen voor het element met de class .textarea-settings */
 .textarea-settings{
     width: 17rem;
     height: 5rem;
     border: 0;
 }
 
+/* Stijlen voor het element met de class .insert-btn */
 .insert-btn{
     width: 10rem;
     height: 5vh;
@@ -310,26 +331,31 @@ li:hover{
     font-size: 1.1rem;
 }
 
+/* Stijlen voor de :hover-toestand van het element met de class .insert-btn */
 .insert-btn:hover{
     background-color: rgb(41, 41, 41);
     color: white;
 }
 
+/* Stijlen voor het element met de class .footer-alles */
 .footer-alles{
     width: 98.9vw;
     height: 15vh;
     background-color: #82968C;
 }
 
+/* Stijlen voor het element met de class .product-foto */
 .product-foto{
     height: 12vw;
 }
 
+/* Stijlen voor het element met de class .product-beschrijving */
 .product-beschrijving{
     text-align: center;
     width: 20vw;
 }
 
+/* Stijlen voor het element met de class .product-button */
 .product-button{
     width: 7vw;
     height: 4vh;
@@ -339,30 +365,46 @@ li:hover{
     color: white;
 }
 
+/* Stijlen voor het element met de class .insert-icon */
 .insert-icon{
     width: 2.1vw;
     margin-left: 82vw;
 }
 
+/* Stijlen voor het element met de class .wijzigen-icon */
 .wijzigen-icon{
     width: 2.1vw;
     margin-right: 1vw;
     margin-left: 7vw;
 }
 
+/* Stijlregel voor elementen met de klasse .verwijderen-icon */
 .verwijderen-icon{
+     
+    /* Breedte van het element */
     width: 2.1vw;
 }
 
+/* Stijlregel voor elementen met de klasse .icon */
 .icon{
+    
+    /* Gebruik flexbox lay-out */
     display: flex;
+
+    /* Plaats de flex-items in een rij */
     flex-direction: row;
 }
 
+/* Stijlregel voor elementen met de klasse .add-icon */
 .add-icon{
+     
+    /* Breedte van het element */
     width: 2.1vw;
 }
 
+/* Regel die wordt toegepast wanneer de muis over .add-icon, .insert-icon, .wijzigen-icon, of .verwijderen-icon zweeft */
 .add-icon:hover, .insert-icon:hover, .wijzigen-icon:hover, .verwijderen-icon:hover{
+   
+    /* Breedte van het element wanneer de muis erover zweeft */
     width: 2vw;
 }

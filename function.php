@@ -56,12 +56,19 @@
 
     function Insert(){
 
+        // Inclusief het bestand met de database verbindingscode
         include "connect.php";
-
+    
+        // Toon een melding met behulp van JavaScript
         echo "<script>alert('Product is Toegevoegd');</script>";
-
+    
+        // SQL-query om gegevens in te voegen in de tabel "product"
         $sql = "INSERT INTO product (productcode, naam, prijs, beschrijving, foto) VALUES (NULL, :naam, :prijs, :beschrijving, :foto)";
+        
+        // Bereid de SQL-query voor op uitvoering
         $query = $connect->prepare($sql);
+        
+        // Voer de voorbereide query uit met waarden verstrekt in de $_POST-array
         $query->execute(
             [
                 ':naam' => $_POST['naam'],
@@ -69,6 +76,5 @@
                 ':beschrijving' => $_POST['beschrijving'],
                 ':foto' => $_POST['foto']
             ]);
-
     }
 ?>
