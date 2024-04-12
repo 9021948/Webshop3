@@ -32,5 +32,4 @@
         <h3 class="h3t">©Copyright 2024 Junior’s Toys. Alle rechten voorbehouden.</h3>
     </footer>
 
-    <script src="Javascript.js"></script>
 </body>

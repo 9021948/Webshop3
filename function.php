@@ -15,6 +15,7 @@
 
         // Itereren over elk product en het weergeven
         foreach ($result as $product) {
+
             echo '<header class="product-div">';
                 echo "<img class='product-foto' src='./assets/" . $product['foto'] . "'>";
                 // Productinformatie weergeven
@@ -27,17 +28,13 @@
 
                 echo '<header class="icon">';
 
-                    echo '<form method="post" action="home.php">';
-                        echo '<input type="image" src="./assets/cart-add.png" name="add" class="add-icon" title="Product Toevoegen"/>';
-                    echo '</form>';
-
                     // Knoppen voor het wijzigen en verwijderen van producten
                     echo '<form method="post" action="wijzigen.php">';
                         echo '<input type="image" src="./assets/edit.svg" name="wijzigen" class="wijzigen-icon" title="Product Wijzigen"/>';
                     echo '</form>';
                 
-                    echo '<form method="POST">';
-                        echo '<input type="image" src="./assets/verwijder.svg" value="' . $product['productcode'] . '" name="verwijderen" class="verwijderen-icon" title="Product Verwijder"/>';
+                    echo '<form method="post" action="delete.php?id=' . $product['productcode'] . '">';
+                        echo '<input type="submit" value="verwijder" name="verwijder" class="verwijderen-icon" title="Product Verwijder"/>';
                     echo '</form>';
 
                 echo '</header>';
@@ -45,22 +42,18 @@
             echo '</header>';
             echo '<br>';
         }
+
         // Einde van de hoofdcontainer voor producten
         echo '</header>';
 
-        if (isset($_POST["verwijderen"])) {
-            header('locate: home.php');
-            exit;
-        }
+
+
     }
 
     function Insert(){
 
         // Inclusief het bestand met de database verbindingscode
         include "connect.php";
-    
-        // Toon een melding met behulp van JavaScript
-        echo "<script>alert('Product is Toegevoegd');</script>";
     
         // SQL-query om gegevens in te voegen in de tabel "product"
         $sql = "INSERT INTO product (productcode, naam, prijs, beschrijving, foto) VALUES (NULL, :naam, :prijs, :beschrijving, :foto)";
@@ -77,4 +70,22 @@
                 ':foto' => $_POST['foto']
             ]);
     }
+
+    function verwijder(){
+
+        include 'connect.php';
+
+        if (isset($_POST['verwijder'])) {
+
+            $sql = "DELETE FROM product WHERE productcode = :productcode";
+            $query = $connect->prepare($sql);
+            $query->execute([':productcode' => $_GET['id']]);
+
+            echo "<script>alert('Product Code: " . $_GET['id'] . "');</script>";
+            header('Location: speelgoed.php');
+            exit;
+        }
+
+    }
+
 ?>

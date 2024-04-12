@@ -374,15 +374,19 @@ li:hover{
 /* Stijlen voor het element met de class .wijzigen-icon */
 .wijzigen-icon{
     width: 2.1vw;
-    margin-right: 1vw;
-    margin-left: 7vw;
+    margin-right: 5vw;
 }
 
 /* Stijlregel voor elementen met de klasse .verwijderen-icon */
 .verwijderen-icon{
      
     /* Breedte van het element */
-    width: 2.1vw;
+    width: 7vw;
+    height: 5vh;
+    border: 0;
+    background-color: black;
+    color: white;
+    font-size: .85rem;
 }
 
 /* Stijlregel voor elementen met de klasse .icon */
@@ -403,8 +407,13 @@ li:hover{
 }
 
 /* Regel die wordt toegepast wanneer de muis over .add-icon, .insert-icon, .wijzigen-icon, of .verwijderen-icon zweeft */
-.add-icon:hover, .insert-icon:hover, .wijzigen-icon:hover, .verwijderen-icon:hover{
+.add-icon:hover, .insert-icon:hover, .wijzigen-icon:hover{
    
     /* Breedte van het element wanneer de muis erover zweeft */
     width: 2vw;
+}
+
+.verwijderen-icon:hover{
+    background-color: white;
+    color: black;
 }
