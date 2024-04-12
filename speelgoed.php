@@ -38,6 +38,8 @@
 
         // Oproepen van de functie 'Producten'
         Producten();
+        Verwijderen();
+
     ?>
 
     <footer class="footer-alles">

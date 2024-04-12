@@ -24,6 +24,9 @@
                 echo '<br>';
                 echo "<h4 class='product-beschrijving'>" . $product['beschrijving'] . "</h4>";
                 echo '<br>';
+                echo '<form method="post" action="home.php">';
+                echo '<input type="hidden" name="productcode" value="' . $product['productcode'] . '"/>';
+                echo '</form>';
 
                 echo '<header class="icon">';
 
@@ -36,7 +39,7 @@
                         echo '<input type="image" src="./assets/edit.svg" name="wijzigen" class="wijzigen-icon" title="Product Wijzigen"/>';
                     echo '</form>';
                 
-                    echo '<form method="post" action="home.php">';
+                    echo '<form method="post" action="">';
                         echo '<input type="image" src="./assets/verwijder.svg" name="verwijderen" class="verwijderen-icon" title="Product Verwijder"/>';
                     echo '</form>';
 
@@ -65,6 +68,22 @@
                 ':beschrijving' => $_POST['beschrijving'],
                 ':foto' => $_POST['foto']
             ]);
+
+    }
+    function Verwijderen(){
+
+        include "connect.php";
+
+        $id = $_POST['productcode'];
+
+        if (isset($_POST['verwijderen'])) {
+
+            $sql = "DELETE FROM product WHERE productcode = :productcode";
+            $query = $connect->prepare($sql);
+            $query->execute([':productcode' => $id]);
+            echo "<script>alert('Product is Verwijderd');</script>";
+
+        }
 
     }
 
