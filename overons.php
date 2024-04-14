@@ -48,7 +48,8 @@
 
         <div class="over-structuur">
         <img class="side-image" src="./assets/junior.jpg">
-            <p class="over-text">Ik ben Junior, 22 jaar oud, en ik ben dol op voetbal en ontspannen met vrienden. Ontdek meer over mijn interesses en avonturen hier!</p>
+            <p class="over-text">Ik ben Junior, 22 jaar oud, en ik ben dol op voetbal en ontspannen met vrienden. 
+                Ontdek meer over mijn interesses en avonturen via mij!</p>
         </div>
 
     </header>
