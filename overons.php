@@ -47,8 +47,8 @@
         <h1 class="over-subtitel">Over Junior</h1>
 
         <div class="over-structuur">
-            <img class="side-image" src="./assets/fluffy-toy-texture-close-up.jpg">
-            <p class="over-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit odit quas, itaque pariatur sequi doloremque libero animi at iure, illum modi reprehenderit accusamus dignissimos veritatis tempore repudiandae necessitatibus asperiores ex.</p>
+        <img class="side-image" src="./assets/junior.jpg">
+            <p class="over-text">Ik ben Junior, 22 jaar oud, en ik ben dol op voetbal en ontspannen met vrienden. Ontdek meer over mijn interesses en avonturen hier!</p>
         </div>
 
     </header>
@@ -73,8 +73,8 @@
         <h1 class="over-subtitel">Over Dean</h1>
 
         <div class="over-structuur">
-            <img class="side-image" src="./assets/fluffy-toy-texture-close-up.jpg">
-            <p class="over-text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit odit quas, itaque pariatur sequi doloremque libero animi at iure, illum modi reprehenderit accusamus dignissimos veritatis tempore repudiandae necessitatibus asperiores ex.</p>
+            <img class="side-image" src="./assets/fotodean.jpg">
+            <p class="over-text-black"> Ik ben Dean, 17 jaar oud en vastbesloten om een succesvol leven te leiden. Mijn drijfveren? Succes, geluk en het delen van mijn prestaties met anderen. Naast mijn doelen geniet ik van muziek.   </p>
         </div>
 
     </header>
