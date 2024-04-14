@@ -11,13 +11,22 @@
 
     <!-- Navigatiemenu -->
     <nav>
-        <!-- Logo van de website -->
         <h1 class="logo">SJ</h1>
-        <!-- Lijst met navigatielinks -->
         <ul>
             <li><a href="home.php">Home</a></li>
             <li><a href="speelgoed.php">Speelgoed</a></li>
-            <li><a href="overons.php">Over ons</a></li>
+
+            <div class="dropdown">
+
+                <li class="dropbtn"><a href="overons.php#home">Over ons <span class="arrow-down">&#9660;</span></a></li>
+
+                <div class="dropdown-content">
+                    <li class="drop-li"><a href="overons.php#junior">Junior</a></li>
+                    <li class="drop-li"><a href="overons.php#jandro">Jandro</a></li>
+                    <li class="drop-li"><a href="overons.php#dean">Dean</a></li>
+                </div>
+
+            </div>
         </ul>
     </nav>
 

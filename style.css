@@ -85,6 +85,11 @@ li{
     color: #ffffff;
 }
 
+/* Stijlen voor de lijstitems bij hover in navigatiebalk */
+li:hover{
+    background-color: #82968C;
+}
+
 /* Stijlen voor de ankers in navigatiebalk */
 a{
     text-decoration: none;
@@ -93,9 +98,44 @@ a{
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
-/* Stijlen voor de lijstitems bij hover in navigatiebalk */
-li:hover{
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
     background-color: #82968C;
+    min-width: 292px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover, .drop-li:hover {
+    background-color: #6A706E;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: #82968C;
+}
+
+.arrow-down{
+    font-size: 1.2rem;
+    position: relative;
+    left: -.2vw;
+    bottom: .9vh;
 }
 
 /* Algemene achtergrondstijlen voor de hele pagina */
@@ -119,7 +159,8 @@ li:hover{
 /* Stijlen voor verschillende tekstsecties */
 .h1t{
     font-family: Toys;
-    background: linear-gradient(90deg, rgba(0, 0, 255, 1), rgba(255, 0, 0, 1), rgba(221, 255, 0, 1));
+    background: rgb(0,14,255);
+    background: linear-gradient(110deg, rgba(0,14,255,1) 10%, rgba(255,0,0,1) 51%, rgba(255,248,0,1) 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent; 
     font-size: 10rem;
@@ -267,13 +308,13 @@ li:hover{
 
 /* Stijlen voor het element met de class .speelgoed-title */
 .speelgoed-title{
-    margin-top: 10vh;
+    margin-top: 14vh;
     font-family: Toysall;
-    margin-left: 35.5vw;
     color: rgb(255, 255, 255);
-    font-size: 10rem;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-size: 10rem;
     margin-bottom: 5vh;
+    margin-left: 35.5vw;
 }
 
 /* Stijlen voor het element met de class .body-speelgoed */
@@ -416,4 +457,76 @@ li:hover{
 .verwijderen-icon:hover{
     background-color: white;
     color: black;
+}
+
+.home-over-ons{
+    width: 98.9vw;
+    height: 100vh;
+    background-image: url(./assets/over-ons-bg.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Over-ons-Title{
+    font-size: 7rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #99e3eb;
+}
+
+.junior-over-ons{
+    width: 98.9vw;
+    height: 100vh;
+    background-image: url(./assets/over-ons-bg1.jpg);
+    background-size: 100%;
+}
+
+.jandro-over-ons{
+    width: 98.9vw;
+    height: 100vh;
+    background-image: url(./assets/red-black-brush-stroke-banner-background-perfect-canva.jpg);
+    background-size: 100%;
+}
+
+.dean-over-ons{
+    width: 98.9vw;
+    height: 100vh;
+    background-image: url(./assets/over-ons-bg2.jpg);
+    background-size: 100%;
+}
+
+.over-subtitel{
+    text-align: center;
+    padding-top: 12vh;
+    font-size: 3.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(254, 254, 254);
+    text-shadow: 0px 0px 15px gold;
+}
+
+.side-image{
+    height: 70vh;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+.over-structuur{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.over-text{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.over-text-black{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
 }
