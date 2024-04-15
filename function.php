@@ -29,7 +29,7 @@
                 echo '<header class="icon">';
 
                     // Knoppen voor het wijzigen en verwijderen van producten
-                    echo '<form method="post" action="wijzigen.php">';
+                    echo '<form method="post" action="wijzigen.php?id=' . $product['productcode'] . '">';
                         echo '<input type="image" src="./assets/edit.svg" name="wijzigen" class="wijzigen-icon" title="Product Wijzigen"/>';
                     echo '</form>';
                 
