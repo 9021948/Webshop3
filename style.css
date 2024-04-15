@@ -459,6 +459,7 @@ a{
     color: black;
 }
 
+/* Stijl voor de home sectie "Over ons" */
 .home-over-ons{
     width: 98.9vw;
     height: 100vh;
@@ -469,26 +470,27 @@ a{
     justify-content: center;
 }
 
+/* Stijl voor de titel in de "Over ons" sectie */
 .Over-ons-Title{
     font-size: 7rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #99e3eb;
 }
-
+/* Stijl voor de "Junior" sectie in de "Over ons" pagina */
 .junior-over-ons{
     width: 98.9vw;
     height: 100vh;
     background-image: url(./assets/over-ons-bg1.jpg);
     background-size: 100%;
 }
-
+/* Stijl voor de "Jandro" sectie in de "Over ons" pagina */
 .jandro-over-ons{
     width: 98.9vw;
     height: 100vh;
     background-image: url(./assets/red-black-brush-stroke-banner-background-perfect-canva.jpg);
     background-size: 100%;
 }
-
+/* Stijl voor de "Dean" sectie in de "Over ons" pagina */
 .dean-over-ons{
     width: 98.9vw;
     height: 100vh;
@@ -496,6 +498,7 @@ a{
     background-size: 100%;
 }
 
+/* Stijl voor de subtitel in de "Over ons" secties */
 .over-subtitel{
     text-align: center;
     padding-top: 12vh;
@@ -505,11 +508,13 @@ a{
     text-shadow: 0px 0px 15px gold;
 }
 
+/* Stijl voor de zijafbeelding in de "Over ons" secties */
 .side-image{
     height: 70vh;
     margin-left: 5vw;
     margin-top: 5vh;
 }
+
 
 .over-structuur{
     display: flex;
@@ -517,6 +522,7 @@ a{
     align-items: center;
 }
 
+/* Stijl voor de tekstinhoud in de "Over ons" secties */
 .over-text{
     margin-left: 5vw;
     margin-right: 5vw;
@@ -524,6 +530,7 @@ a{
     color: white;
 }
 
+/* Stijl voor de zwarte tekstinhoud in de "Over ons" secties */
 .over-text-black{
     margin-left: 5vw;
     margin-right: 5vw;
@@ -531,6 +538,7 @@ a{
     color: rgb(0, 0, 0);
 }
 
+/* Stijl voor het bodygedeelte voor het wijzigen van de afbeelding */
 .body-wijzigen{
     background-image: url(./assets/wijzigenfoto.jpg);
     background-size: 100rem;
