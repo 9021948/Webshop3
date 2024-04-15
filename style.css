@@ -531,3 +531,8 @@ a{
     color: rgb(0, 0, 0);
 }
 
+.body-wijzigen{
+    background-image: url(./assets/wijzigenfoto.jpg);
+    background-size: 100rem;
+    background-repeat: no-repeat;
+}

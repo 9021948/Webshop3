@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./assets/toy-shop.png" type="image/x-icon">
     <title>Wijzigen</title>
 </head>
-<body class='body-insert'>
+<body class='body-wijzigen'>
 
     <!-- Navigatiemenu -->
     <nav>
@@ -37,7 +37,7 @@
     
             if (isset($_POST['wijzgbtn'])) {
     
-                Insert();
+                wijzigen();
                 header('location: speelgoed.php');
                 exit;
     

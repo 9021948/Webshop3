@@ -88,4 +88,27 @@
 
     }
 
+    function wijzigen(){
+
+        include 'connect.php';
+
+        if (isset($_POST['wijzgbtn'])) {
+
+            $sql = "UPDATE product SET naam = :naam, prijs = :prijs, beschrijving = :beschrijving, foto = :foto WHERE productcode = :productcode";
+            $query = $connect->prepare($sql);
+            $query->execute(
+                [
+                    ':naam' => $_POST['naam'],
+                    ':prijs' => $_POST['prijs'],
+                    ':beschrijving' => $_POST['beschrijving'],
+                    ':foto' => $_POST['foto'],
+                    ':productcode' => $_GET['id']
+                ]);
+
+            header('Location: speelgoed.php');
+            exit;
+        }
+
+    }   
+
 ?>
